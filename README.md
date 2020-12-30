@@ -1,2 +1,2 @@
-# infra
+# Infra
 Personal infrastructure
