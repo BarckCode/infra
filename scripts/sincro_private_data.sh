@@ -17,7 +17,7 @@ ANSIBLE_HOSTS="hosts"
 USER="barckcode"
 
 # Hosts
-DEBIAN_PRO="arangon"
+DEBIAN_PRO="aragon"
 
 
 if [[ -d $WORK_DIR ]]
