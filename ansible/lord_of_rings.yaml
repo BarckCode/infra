@@ -12,8 +12,8 @@
 - hosts: webservers-pre
 #- hosts: webservers-pro
 #- hosts: test_servers
-	tasks:
-		- name: Install docker on Debian
-			include_role:
-				name: docker_conf
-			tags:	docker_conf
+  tasks:
+  - name: Install docker on Debian
+      include_role:
+        name: docker_conf
+    tags:	docker_conf
