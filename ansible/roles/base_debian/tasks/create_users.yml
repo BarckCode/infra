@@ -1,0 +1,6 @@
+- name: Add system user admin
+  user:
+    name: barckcode
+    comment: "System Administrator"
+    shell: /bin/bash
+    

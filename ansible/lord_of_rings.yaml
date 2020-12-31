@@ -13,7 +13,7 @@
 #- hosts: webservers-pro
 #- hosts: test_servers
   tasks:
-  - name: Install docker on Debian
+  - name: Basic setup for Debian Web Server
       include_role:
-        name: docker_conf
-    tags:	docker_conf
+        name: base_debian
+    tags:	base_debian

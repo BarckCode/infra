@@ -1,0 +1,3 @@
+- name: Verify that the operating system is Debian
+  import_taks: create_users.yml
+  when: ansible_facts['os_family']|lower == 'debian'
