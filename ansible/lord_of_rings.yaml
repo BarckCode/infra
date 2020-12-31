@@ -1,2 +1,19 @@
 ---
-- name: Un Playbook para gobernarlos a todos.
+####################### Playbook Utilities
+# docker_conf -> Tag to install and configure Docker on Debian
+
+####################### Individual hosts
+#- hosts: sauron
+#- hosts: aragon
+#- hosts: aragon-pre
+#- hosts: ubuntu-test
+####################### Host groups
+#- hosts: webservers
+- hosts: webservers-pre
+#- hosts: webservers-pro
+#- hosts: test_servers
+	tasks:
+		- name: Install docker on Debian
+			include_role:
+				name: docker_conf
+			tags:	docker_conf
