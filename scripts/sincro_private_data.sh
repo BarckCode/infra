@@ -16,8 +16,12 @@ ANSIBLE_HOSTS="hosts"
 # Users
 USER="barckcode"
 
-# Hosts
+# Individual Hosts
 DEBIAN_PRO="aragon"
+DEBIAN_PRE="aragon-pre"
+
+# Host groups
+
 
 
 if [[ -d $WORK_DIR ]]
