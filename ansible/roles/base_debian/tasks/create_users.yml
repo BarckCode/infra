@@ -6,6 +6,3 @@
     home: /home/barckcode
     shell: /bin/bash
     state: present
-    register: out_user
-- name: Register
-  debug: var=out_user
