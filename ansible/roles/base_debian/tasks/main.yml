@@ -1,6 +1,14 @@
-# - name: Verify that the operating system is Debian
+# - name: Install the correct web server for Debian
 #   import_tasks: create_users.yml
 #   when: ansible_facts['os_family']|lower == 'debian'
-- name: Install the correct web server for Debian
-  import_tasks: create_users.yml
-  when: ansible_facts['os_family']|lower == 'debian'
+- name: Add system user admin
+  user:
+    name: barckcode
+    comment: "System Administrator"
+    create_home: True
+    home: /home/barckcode
+    shell: /bin/bash
+    state: present
+    register: out_user
+- name: Register
+  debug: var=out_user
