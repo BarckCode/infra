@@ -1,2 +1,6 @@
-- name: Verify that the operating system is Debian
+# - name: Verify that the operating system is Debian
+#   import_tasks: create_users.yml
+#   when: ansible_facts['os_family']|lower == 'debian'
+- name: Install the correct web server for Debian
   import_tasks: create_users.yml
+  when: ansible_facts['os_family']|lower == 'debian'
