@@ -29,7 +29,6 @@
 - name: Install specific version from docker-ce and containerd
   apt:
     name: ['docker-ce=5:20.10.1~3-0~debian-buster', 'docker-ce-cli=5:20.10.1~3-0~debian-buster', 'containerd.io']
-    state: latest
 
 - name: Add the user 'barckcode' to the group 'docker'
   shell: sudo usermod -aG docker barckcode
