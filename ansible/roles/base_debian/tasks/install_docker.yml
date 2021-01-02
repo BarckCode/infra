@@ -9,8 +9,8 @@
 
 - name: Add Docker’s official GPG key
   shell: curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
-    args:
-      warn: no
+  args:
+    warn: no
 
 - name: Set up the stable repository
   apt_repository:
