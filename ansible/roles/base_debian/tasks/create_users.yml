@@ -5,5 +5,5 @@
     create_home: True
     home: /home/barckcode
     shell: /bin/bash
-    password: {{ barckcode_passwd }}
+    # password: {{ barckcode_passwd }}
     state: present
