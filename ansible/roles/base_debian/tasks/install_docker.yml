@@ -1,0 +1,14 @@
+- name: Update Repos
+  apt:
+    update_cache: yes
+
+- name: Install packages to allow apt to use a repository over HTTPS
+  apt:
+    name: {{ item pkg }}
+    state: latest
+  whit_items:
+    - {pkg: apt-transport-https}
+    - {pkg: ca-certificates}
+    - {pkg: curl}
+    - {pkg: gnupg-agent}
+    - {pkg: software-properties-common}

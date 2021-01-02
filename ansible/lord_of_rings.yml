@@ -16,4 +16,5 @@
     - name: Basic setup for Debian Web Server
       include_role:
         name: base_debian
-      tags:	base    # No estan funcionando los tags. Issue: https://github.com/BarckCode/infra/issues/3
+      # No estan funcionando los tags. Issue: https://github.com/BarckCode/infra/issues/3
+      tags: base
