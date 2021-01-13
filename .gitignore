@@ -3,6 +3,8 @@
 logs
 
 ### TERRAFORM
+kube_config
+
 # Local .terraform directories
 **/.terraform/*
 
