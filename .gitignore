@@ -1,6 +1,7 @@
 ### Local env
 .history
 logs
+README_private.md
 
 ### TERRAFORM
 kube_config
