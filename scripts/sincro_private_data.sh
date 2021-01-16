@@ -1,4 +1,4 @@
-# /bin/bash
+#!/bin/bash
 # Autor: Barckcode
 # Description: Script to sync private Sauron data
 
